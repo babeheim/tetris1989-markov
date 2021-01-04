@@ -404,8 +404,7 @@ dev.off()
 ######## beta-binomial model of gamma ########
 
 prep <- prep_gb_analysis(x_gb)
-tar <- which(prep############
-$ost_bias == 1)
+tar <- which(prep$ost_bias == 1)
 n_chose_favored <- sum(prep$chose_favored[tar]) # 156
 n_total <- length(tar) # 188
 # the ratio is 0.830, so gamma = 0.401
